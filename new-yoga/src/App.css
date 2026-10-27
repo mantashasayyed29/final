@@ -1,0 +1,248 @@
+body {
+  background:
+    radial-gradient(ellipse at 12% 8%, rgba(211, 220, 188, 0.42), transparent 32%),
+    radial-gradient(ellipse at 92% 88%, rgba(232, 210, 169, 0.3), transparent 30%),
+    #f7f6ef;
+}
+
+.App {
+  min-height: 100vh;
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 54px 24px;
+  color: #29372d;
+  box-sizing: border-box;
+}
+
+.brand-name {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 28px;
+  color: #536b4e;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+}
+
+.brand-name::before {
+  width: 34px;
+  height: 1px;
+  background: #c49b5b;
+  content: '';
+}
+
+.App h1 {
+  margin: 0 0 18px;
+  color: #29372d;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: clamp(30px, 5vw, 38px);
+  font-weight: 500;
+  letter-spacing: -0.035em;
+}
+
+.apply-link {
+  display: inline-block;
+  margin-bottom: 28px;
+  color: #536b4e;
+  text-underline-offset: 4px;
+  text-decoration-color: #a8b49c;
+  transition: color 150ms ease;
+}
+
+.apply-link:hover {
+  color: #344934;
+}
+
+.home-apply-link {
+  padding: 17px 24px;
+  border: 1px solid #dce3d4;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #fffefa, #f0f3e9);
+  box-shadow: 0 10px 25px rgba(50, 69, 49, 0.09);
+  font-weight: 600;
+  text-decoration: none;
+  transition: transform 150ms ease, box-shadow 150ms ease;
+}
+
+.home-apply-link:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 28px rgba(50, 69, 49, 0.13);
+}
+
+.application-form {
+  display: grid;
+  gap: 18px;
+  padding: 34px;
+  border: 1px solid rgba(220, 227, 212, 0.9);
+  border-radius: 18px;
+  background: rgba(255, 254, 250, 0.94);
+  box-shadow: 0 18px 44px rgba(50, 69, 49, 0.1);
+  backdrop-filter: blur(8px);
+}
+
+.profile-details {
+  margin-bottom: 20px;
+  padding: 26px 30px;
+  border: 1px solid rgba(220, 227, 212, 0.9);
+  border-radius: 18px;
+  background: rgba(255, 254, 250, 0.94);
+  box-shadow: 0 18px 44px rgba(50, 69, 49, 0.1);
+}
+
+.profile-details p {
+  margin: 0;
+  padding: 15px 0;
+  border-bottom: 1px solid #e9ede4;
+  color: #5d685e;
+  line-height: 1.6;
+  overflow-wrap: anywhere;
+}
+
+.profile-details p strong {
+  display: inline-block;
+  min-width: 130px;
+  color: #344934;
+}
+
+.profile-details h5 {
+  margin: 24px 0 8px;
+  color: #536b4e;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.zoom-meeting-link {
+  display: inline-block;
+  margin: 8px 0;
+  padding: 11px 17px;
+  border-radius: 7px;
+  background: #536b4e;
+  color: #fff;
+  text-decoration: none;
+  transition: background-color 150ms ease, transform 150ms ease;
+}
+
+.zoom-meeting-link:hover {
+  transform: translateY(-1px);
+  background: #40563d;
+}
+
+.meeting-actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.meeting-actions .apply-link {
+  margin: 8px 0;
+}
+
+.selected-meeting-link {
+  display: block;
+  width: fit-content;
+  margin: 8px 0 16px;
+  padding: 10px 16px;
+  border-radius: 4px;
+  background: #24833b;
+  color: #fff;
+  text-decoration: none;
+}
+
+.selected-meeting-link:hover {
+  background: #1c6b30;
+}
+
+.selected-meeting-link:focus-visible {
+  outline: 2px solid #24833b;
+  outline-offset: 3px;
+}
+
+.application-form label {
+  display: grid;
+  gap: 8px;
+  color: #344934;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.application-form input,
+.application-form textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 11px 12px;
+  border: 1px solid #d6ddcf;
+  border-radius: 8px;
+  background: #fffefa;
+  color: #29372d;
+  font: inherit;
+  font-weight: 400;
+  transition: border-color 150ms ease, box-shadow 150ms ease;
+}
+
+.application-form input:focus,
+.application-form textarea:focus {
+  border-color: #718b69;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(113, 139, 105, 0.18);
+}
+
+.application-form textarea {
+  resize: vertical;
+}
+
+.application-form button {
+  padding: 11px 18px;
+  border: 1px solid #536b4e;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #617957, #40563d);
+  color: white;
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 5px 12px rgba(64, 86, 61, 0.18);
+  transition: transform 150ms ease, box-shadow 150ms ease;
+}
+
+.application-form button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 8px 16px rgba(64, 86, 61, 0.23);
+}
+
+.form-actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.form-actions .apply-link {
+  margin: 0;
+}
+
+@media (max-width: 520px) {
+  .App {
+    padding: 32px 16px;
+  }
+
+  .application-form,
+  .profile-details {
+    padding: 22px 18px;
+  }
+
+  .application-form {
+    gap: 15px;
+  }
+
+  .profile-details p strong {
+    display: block;
+    margin-bottom: 4px;
+  }
+
+  .form-actions {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
